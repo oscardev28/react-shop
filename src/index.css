@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.product_card {
+  background: linear-gradient(to right, black, rgb(37, 36, 36));
+  padding: 1rem;
+  color: white;
+  position: relative;
+  padding-bottom: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product_card img {
+  border-radius: 10px;
+}
+
+.product_card h5 {
+  color: white;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.product_card span {
+  font-weight: bold;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background: #f5f5f5;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  color: black;
+}
+
+.product_card span:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.product_card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.5s ease;
+}
+
+/*FILTROS*/
+
+.filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter_price input {
+  margin: 0px;
+  padding: 0px;
+}
+
+.filter_price span {
+  margin-top: 6px;
+}
+
+.filter_price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.filter_cat {
+  display: flex;
+  flex-direction: column;
+}
